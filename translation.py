@@ -20,7 +20,7 @@ def translate_to_hinglish(text):
         text = text.replace(key, value)
     return text
 
-# Test the translations
+
 statements = [
     "Definitely share your feedback in the comment section.",
     "So even if it's a big video, I will clearly mention all the products.",
