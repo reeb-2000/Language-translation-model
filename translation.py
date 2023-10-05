@@ -1,17 +1,17 @@
-
+# Define a dictionary to map English words/phrases to Hinglish
 translation_dict = {
     "Definitely": "जरूर",
-    "share your": "share करो apna",
-    "feedback": "feedback",
+    "share your feedback": "अपना feedback share करो",
     "in the comment section": "comment section में",
-    "So": "अगर",
-    "even if it's a": "even if it's a",
-    "big": "बड़ा",
-    "video": "video",
-    "I will clearly mention all the": "मैं सब",
-    "products": "products को mention करूँगा",
-    "I was waiting for my": "मैं मेरा",
-    "bag": "bag का wait कर रहाथा",
+    "So": "even if it's a",
+    "a big": "बड़ा",
+    "video": "video,",
+    "I will clearly mention all the": "मैं सब products को mention करूँगा",
+    "I was": "मैं मेरा",
+    "waiting for": "bag का wait कर रहाथा",
+    "my": "मेरा",
+    "bag": "bag"
+
 }
 
 # Function to translate English text to Hinglish
@@ -20,13 +20,12 @@ def translate_to_hinglish(text):
         text = text.replace(key, value)
     return text
 
+# Get user input for an English statement
+english_statement = input("Enter an English statement: ")
 
-statements = [
-    "Definitely share your feedback in the comment section.",
-    "So even if it's a big video, I will clearly mention all the products.",
-    "I was waiting for my bag."
-]
+# Translate the input statement to Hinglish
+hinglish_translation = translate_to_hinglish(english_statement)
 
-for statement in statements:
-    hinglish_translation = translate_to_hinglish(statement)
-    print(hinglish_translation)
+# Print the Hinglish translation
+print("Hinglish Translation:")
+print(hinglish_translation)
